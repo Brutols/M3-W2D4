@@ -1,0 +1,37 @@
+.background__main {
+    height: 80vh;
+    align-items: center;
+    background-image: url('./assets/background.jpg');
+}
+
+.navbar__logo {
+    width: 10%;
+}
+
+.big__title {
+    width: 50%;
+    text-align: center;
+    margin-block: auto;
+    color: white;
+}
+
+.my__navbar {
+    width: 100%;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.section__title {
+    text-align: center;
+}
+
+.card {
+    --bs-gutter-x: 0;
+}
+
+.card img {
+    aspect-ratio: 1/0.8;
+    object-fit: cover;
+}
