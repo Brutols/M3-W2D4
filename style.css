@@ -1,37 +1,138 @@
 .background__main {
-    height: 80vh;
-    align-items: center;
-    background-image: url('./assets/background.jpg');
+  height: 80vh;
+  align-items: center;
+  background-image: url("./assets/background.jpg");
 }
 
 .navbar__logo {
-    width: 10%;
+  width: 10%;
 }
 
 .big__title {
-    width: 50%;
-    text-align: center;
-    margin-block: auto;
-    color: white;
+  width: 50%;
+  text-align: center;
+  margin-block: auto;
+  color: white;
 }
 
 .my__navbar {
-    width: 100%;
+  width: 100%;
 }
 
 .nav-link {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .section__title {
-    text-align: center;
+  text-align: center;
 }
 
 .card {
-    --bs-gutter-x: 0;
+  --bs-gutter-x: 0;
+  -webkit-box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  animation: cardHover 0.3s forwards;
 }
 
 .card img {
-    aspect-ratio: 1/0.8;
-    object-fit: cover;
+  aspect-ratio: 1/0.8;
+  object-fit: cover;
 }
+
+@keyframes cardHover {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.03, 1.03);
+  }
+}
+
+.card a {
+  --bs-btn-bg: #212529;
+  --bs-btn-hover-bg: #303030;
+  --bs-btn-border-color: #212529;
+  --bs-btn-hover-border-color: #303030;
+}
+
+.carousel-item img {
+  aspect-ratio: 1/0.3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-item img:hover {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.pers__controls {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7204131652661064) 0%,
+    rgba(0, 0, 0, 0.3982843137254902) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7204131652661064) 0%,
+    rgba(0, 0, 0, 0.3982843137254902) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7204131652661064) 0%,
+    rgba(0, 0, 0, 0.3982843137254902) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+.pers__controls2 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.7204131652661064) 0%,
+    rgba(0, 0, 0, 0.3982843137254902) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.7204131652661064) 0%,
+    rgba(0, 0, 0, 0.3982843137254902) 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.7204131652661064) 0%,
+    rgba(0, 0, 0, 0.3982843137254902) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+.carousel__pers {
+    border-radius: 10px;
+}
+
+
+.testimonials__pers img {
+    aspect-ratio: 1/1.3;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 5% 10%;
+    background-color: #303030;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
